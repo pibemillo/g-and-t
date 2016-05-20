@@ -7,6 +7,10 @@ module.exports = function (juneBot) {
 
 /*  juneBot.respond((/hi/i) || (/hey/i), function(hiRes) {
     if(hiRes == "hi") {
+=======
+  juneBot.respond(/\bhi\b|\bhey\b/i, function(hiRes) {
+    if(hiRes === /hi/) {
+>>>>>>> 8c7f95a86ac65a0ddda7ca9cd14d7b94f80c558a
       return hiRes.reply("Well, hi to you too, good lookin' ;)")
     } else {
       return hiRes.reply("Hey, how you doin'?")
