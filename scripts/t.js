@@ -17,7 +17,7 @@ module.exports = function (juneBot) {
     }
   })*/
 
-  junBot.respond(/(.*)/i, function(hiRes){
+  juneBot.respond(/(.*)/i, function(hiRes){
     var resType = res.match[1]
     if (resType === "hi") {
       return hiRes.reply("Well, hi to you too, good lookin' ;)")
