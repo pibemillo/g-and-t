@@ -1,7 +1,7 @@
 module.exports = function (juneBot) {
   
   juneBot.hear(/talk to me/i, function(res) {
-    return res.send("If you're really that lonely.")
+    return res.send("Like lovers do.")
   })
 
   juneBot.respond(/hi|hey/i, function(hiRes) {
