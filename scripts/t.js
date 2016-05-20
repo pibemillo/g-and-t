@@ -5,7 +5,7 @@ module.exports = function (juneBot) {
   })
 
   juneBot.respond(/(hi|hey)/i, function(hiRes) {
-    if(hiRes === "hi") {
+    if(hiRes == "hi") {
       return hiRes.reply("Well, hi to you too, good lookin' ;)")
     } else {
       return hiRes.reply("Hey, how you doin'?")
