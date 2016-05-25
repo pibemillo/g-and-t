@@ -1,21 +1,8 @@
 module.exports = function (juneBot) {
   
   juneBot.hear(/talk to me/i, function(res) {
-    return res.send("Like lovers do.")
+    return res.send("Like lovers do. \n Now that song is stuck in your head. Mwahaha!")
   })
-
-
-/*  juneBot.respond((/hi/i) || (/hey/i), function(hiRes) {
-    if(hiRes == "hi") {
-=======
-  juneBot.respond(/\bhi\b|\bhey\b/i, function(hiRes) {
-    if(hiRes === /hi/) {
->>>>>>> 8c7f95a86ac65a0ddda7ca9cd14d7b94f80c558a
-      return hiRes.reply("Well, hi to you too, good lookin' ;)")
-    } else {
-      return hiRes.reply("Hey, how you doin'?")
-    }
-  })*/
 
   juneBot.respond(/(.*)/i, function(hiRes){
     var resType = hiRes.match[1]
@@ -26,4 +13,18 @@ module.exports = function (juneBot) {
     }
   })
 
+  juneBot.hear(/cheerios/i, function(cheerRes){
+    var myArray = [
+      "you're alright, kid!",
+      "you're a rockstar!,"
+      "legend!",
+      "champion!"
+    ]
+
+    var ri = Math.floor(Math.random() * myArray.length)
+    return cheerRes.send(myArray[ri])
+  })
+
+
 }
+
