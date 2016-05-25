@@ -16,7 +16,7 @@ module.exports = function (juneBot) {
   juneBot.hear(/cheerios/i, function(cheerRes){
     var myArray = [
       "you're alright, kid!",
-      "you're a rockstar!,"
+      "you're a rockstar!",
       "legend!",
       "champion!"
     ]
